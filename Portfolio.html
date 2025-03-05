@@ -3,122 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div>
-            <p>
-                Maya Linnea
-            </p>
+
+        <div id="nav-container">
+
             <nav>
+
+                <p class="name-text">
+                    <!--Red text root color-->
+                    <span class="red-text">M</span>aya <span class="red-text">L</span>innea
+                </p>
+                
                 <p>
-                    Hjem
+                    HJEM
                 </p>
                 <p>
-                    Om meg
+                    OM MEG
                 </p>
                 <p>
-                    Mine prosjekt
+                    MINE PROSJEKTER
                 </p>
                 <p>
-                    Kontakt meg
+                    KONTAKT MEG
                 </p>
+                
+                <div class="cv-btn">
+                    Last ned CV
+                </div>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </p>
+
             </nav>
+
         </div>
 
-        <button>
-            Last ned CV
-        </button>
+        <div id="introduction-container">
 
-        <span>
-
-        </span>
-
-        <div>
-            <h1>
+            <h1 class="red-text">
                 Hei, Jeg er Maya Linnea
             </h1>
-            <p>
-                Junior Frontend developer
+
+            <p class="frontend-text">
+                Junior Frontend Developer
             </p>
+
             <p>
                 Kursdeltaker hos Kodehode 24/25, hvor jeg har lært meg programmerinsspråk
-                som HTML og CSS, og til nå litt basic JavaScript.  
+                som HTML og CSS, og til nå litt Basic JavaScript.  
             </p>
+
+            <div id="flex-btn">
+                
+                <div class="red-btn">
+                    <p>
+                        Ansett meg
+                    </p>
+                </div>
+
+                <div class="white-btn">
+                    <p>
+                        Kontakt meg
+                    </p>
+                </div>
+
+            </div>
         </div>
-        <button>
-            Ansett meg
-        </button>
-        <button>
-            Kontakt meg
-        </button>
+       
     </header>
+
     <main>
-        <div>
-            <img src="" alt="">
-            <div>
+
+        <div id="aboutMe-container">
+
+            <div class="aboutMe-img">
+                <img src="assets/img/aimeg.jpg" alt="">
+            </div>
+            
+            <div class="aboutMe">
+
                 <h2>
                     Om meg
                 </h2>
+
                 <p>
-                    Under her finner du en liste over noen av hobbyene mine, disse kommer til å endre 
-                    rekkefølge, og komme opp med en bar under hver enkelt hobby for å vise i hvor stor grad 
-                    jeg liker det.
+                    Jeg er ei jente som er 29 år gammel. Bor i Porsgrunn sammen med samboer, og 
+                    katten vår Foxy. Under her finner du noen av hobbyene mine med en bar som viser 
+                    i hvor stor grad jeg liker det. 
+                </p>
+
+                <ul>
+
+                    <li>
+                        Koding
+                    </li>
+
+                    <li>
+                        Gaming
+                    </li>
+
+                    <li>
+                        Dyr
+                    </li>
+
+                    <li>
+                        Strikking
+                    </li>
+
+                    <li>
+                        Baking
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h2>
+                Mine prosjekt
+            </h2>
+            
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <p>
+                    Vis mer
                 </p>
             </div>
-            <div>
-                <ul>
-                    <li>
 
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h2>
-                    Mine prosjekt
-                </h2>
-                <div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <p>
-                        Vis mer
-                    </p>
-                </div>
-            </div>
-
+        </div>
+    </main>
             <footer>
-                <div>
+                <div id="contact-container">
                     <h2>
                         Kontakt meg
                     </h2>
-                    <p>
-
+                    <p class="contact-text">
+                        Om du ønsker å komme i kontakt med meg, kan du sende meg en mail under her:
                     </p>
                     <input type="text"> 
                     <button>
@@ -134,8 +173,8 @@
                     </p>
                 </div>
             </footer>
-        </div>
-    </main>
+        
+    
     
 </body>
 </html>

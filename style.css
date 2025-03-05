@@ -1,0 +1,82 @@
+html, body {
+    background-color: #232323;
+    color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.name-text {
+    font-size: 24px;
+}
+
+.red-text {
+    color: #F33B3B;
+}
+
+.cv-btn {
+    background-color: #F33B3B;
+    padding: 0.5%;
+    border-radius: 2px;
+}
+
+#introduction-container {
+    margin-left: 3.5%;
+    padding-right: 55%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.frontend-text {
+    font-size: 30px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+#flex-btn {
+    display: flex;
+}
+
+.red-btn {
+    background-color: #F33B3B;
+    margin: 0% 3% 14% 0%;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+.white-btn {
+    background-color: #FFFFFF;
+    color: #232323;
+    margin: 0% 0% 14% 0%;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+#aboutMe-container {
+    display: flex;
+}
+
+.aboutMe-img {
+    margin-left: 3.5%;
+    margin-right: 4%;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.aboutMe > h2 {
+    margin-top: 0%;
+}
+
+.aboutMe {
+    padding-right: 23%;
+}
