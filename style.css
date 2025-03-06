@@ -1,6 +1,7 @@
 html, body {
     background-color: #232323;
     color: #FFFFFF;
+    margin: 0%;
 }
 
 nav {
@@ -113,4 +114,32 @@ img {
 
 .flex-contact {
     display: flex;
+    justify-content: center;
+}
+
+.contact-btn {
+    background-color: #F33B3B;
+    margin-left: 2%;
+    padding: 0.4%;
+    border-radius: 5px;
+}
+
+.myName {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+.copyright-container {
+    background-color: #F33B3B;
+    width: 100%;
+    height: 100%;
+}
+
+.copyright-container > p {
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+    padding: 0.5%;
+    
 }
