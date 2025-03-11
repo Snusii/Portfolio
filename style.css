@@ -20,7 +20,10 @@ html, body {
     margin: 0%;
     background-color: var(--base-color);
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
+
+
 
 nav {
     display: flex;
@@ -100,6 +103,7 @@ h1 {
 
 .red-btn {
     background-color: var(--red-color);
+    color: var(--white-color);
     margin: 0% 3% 14% 0%;
     padding: 0.5%;
     border-radius: 5px;
@@ -113,7 +117,7 @@ h1 {
     border-radius: 5px;
 }
 
-#aboutMe-container {
+.aboutMe-container {
     display: flex;
     margin-bottom: 5%;
 }

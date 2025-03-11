@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
-<body >
+<body>
 
     <header>
 
@@ -21,18 +21,22 @@
                     <span class="red-text">M</span>aya <span class="red-text">L</span>innea
                 </p>
                 
-                <p>
+                <a href="">
                     HJEM
-                </p>
-                <p>
+                </a>
+                    
+                <a href="#aboutMe">
                     OM MEG
-                </p>
-                <p>
+                </a>
+
+                <a href="#projects">
                     MINE PROSJEKTER
-                </p>
-                <p>
+                </a>
+                
+                <a href="#contactMe">
                     KONTAKT MEG
-                </p>
+                </a>
+                
                 
                 <div class="cv-btn">
                     Last ned CV
@@ -83,111 +87,125 @@
 
     <main>
 
-        <div id="aboutMe-container">
+        <section id="aboutMe">
 
-            <div class="aboutMe-img">
+            <div class="aboutMe-container">
 
-                <img src="assets/img/aimeg.jpg" alt="">
+                <div class="aboutMe-img">
+
+                    <img src="assets/img/aimeg.jpg" alt="">
+
+                </div>
+                
+                <div class="aboutMe">
+
+                    <h2>
+                        Om meg
+                    </h2>
+
+                    <p>
+                        Jeg er ei jente som er 29 år gammel. Bor i Porsgrunn sammen med samboer, og 
+                        katten vår Foxy. Under her finner du noen av hobbyene mine med en bar som viser 
+                        i hvor stor grad jeg liker det. 
+                    </p>
+
+                    <div class="hobby-list">
+
+                        <ul>
+
+                            <li>
+                                Koding
+                            </li>
+
+                            <li>
+                                Gaming
+                            </li>
+
+                            <li>
+                                Dyr
+                            </li>
+
+                            <li>
+                                Strikking
+                            </li>
+
+                            <li>
+                                Baking
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </div>
-            
-            <div class="aboutMe">
+
+        </section>
+
+        <section id="projects">
+        
+            <div id="projects-container">
 
                 <h2>
-                    Om meg
+                    Mine prosjekt
                 </h2>
 
-                <p>
-                    Jeg er ei jente som er 29 år gammel. Bor i Porsgrunn sammen med samboer, og 
-                    katten vår Foxy. Under her finner du noen av hobbyene mine med en bar som viser 
-                    i hvor stor grad jeg liker det. 
-                </p>
+                <div class="flex-projects">
 
-                <div class="hobby-list">
+                    <div class="project">
 
-                    <ul>
+                    </div>
 
-                        <li>
-                            Koding
-                        </li>
+                    <div class="project">
 
-                        <li>
-                            Gaming
-                        </li>
+                    </div>
 
-                        <li>
-                            Dyr
-                        </li>
+                    <div class="project">
 
-                        <li>
-                            Strikking
-                        </li>
-
-                        <li>
-                            Baking
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-        <div id="projects-container">
-
-            <h2>
-                Mine prosjekt
-            </h2>
-
-            <div class="flex-projects">
-
-                <div class="project">
-
-                </div>
-
-                <div class="project">
-
-                </div>
-
-                <div class="project">
-
-                </div>
-
-            </div>
-
-        </div>
+        </section>
 
     </main>
 
+
     <footer>
 
-        <div id="contact-container">
+        <section id="contactMe">
 
-            <h2>
-                Kontakt meg
-            </h2>
+            <div id="contact-container">
 
-            <p>
-                Om du ønsker å komme i kontakt med meg, kan du sende meg en mail under her:
-            </p>
+                <h2>
+                    Kontakt meg
+                </h2>
 
-            <div class="flex-contact">
+                <p>
+                    Om du ønsker å komme i kontakt med meg, kan du sende meg en mail under her:
+                </p>
 
-                <input type="Skriv email inn her...">
+                <div class="flex-contact">
 
-                <div class="contact-btn">
+                    <input type="Skriv email inn her...">
 
-                    <p>
-                        Kontakt meg
-                    </p>
-                    
+                    <div class="contact-btn">
+
+                        <p>
+                            Kontakt meg
+                        </p>
+                        
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        </section>
+
 
         <p class="myName">
             <span class="red-text">M</span>aya <span class="red-text">L</span>innea
