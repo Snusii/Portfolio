@@ -1,3 +1,4 @@
+/* colors for the page (in darkmode) */
 :root {
     --base-color: #232323;
     --text-color: #FFFFFF;
@@ -8,6 +9,7 @@
     --toggleSwitch-color: #FFFFFF;
 }
 
+/* Lightmode colors */
 .light-mode {
     --base-color: #FFFFFF;
     --text-color: #232323;
@@ -16,6 +18,7 @@
     --toggleSwitch-color: #232323;
 }
 
+/* html, and body adjustments, with a smooth scroll */
 html, body {
     margin: 0%;
     background-color: var(--base-color);
@@ -24,7 +27,7 @@ html, body {
 }
 
 
-
+/* nav adjustments */
 nav {
     display: flex;
     justify-content: space-around;
@@ -32,6 +35,7 @@ nav {
     font-weight: bold;
 }
 
+/* Name in nav adjustments */
 .name-text {
     font-size: 24px;
 }
@@ -40,6 +44,13 @@ nav {
     color: var(--red-color);
 }
 
+/* a tag in nav adjustments */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* CV button adjustmenst */
 .cv-btn {
     background-color: var(--red-color);
     color: var(--white-color);
@@ -47,20 +58,24 @@ nav {
     border-radius: 2px;
 }
 
+/* ToggleSwitch between dark and lightmode adjustments */
 #toggleSwitch {
     padding: 0;
     border: none;
     background-color: var(--base-color);
 }   
 
+/* Icon color */
 #toggleSwitch svg {
     fill: var(--toggleSwitch-color);
 }
 
+/*  */
 #toggleSwitch svg:last-child {
     display: none;
 }
 
+/*  */
 #toggleSwitch svg:first-child:hover {
     display: block;
     fill: var(--red-color);
@@ -79,28 +94,34 @@ nav {
     fill: var(--red-color);
 }
 
+
+/* introduction container adjustments */
 #introduction-container {
     margin-left: 3.5%;
     padding-right: 55%;
     font-weight: bold;
 }
 
+/* h1 in introduction container adjustments */
 h1 {
     font-size: 40px;
     margin-top: 5%;
     margin-bottom: 0%;
 }
 
+/* text adjustments in introduction container */
 .frontend-text {
     font-size: 30px;
     margin-top: 1%;
     margin-bottom: 0%;
 }
 
+/* flex buttons in introduction container */
 #flex-btn {
     display: flex;
 }
 
+/* Hire me button adjustments in introduction container */
 .red-btn {
     background-color: var(--red-color);
     color: var(--white-color);
@@ -109,6 +130,7 @@ h1 {
     border-radius: 5px;
 }
 
+/* Contact me button adjustments in introduction container */
 .white-btn {
     background-color: var(--special-btn-color);
     color: var(--special-btn-textColor);
@@ -117,45 +139,57 @@ h1 {
     border-radius: 5px;
 }
 
+
+/* aboutMe container adjustments */
 .aboutMe-container {
     display: flex;
     margin-bottom: 5%;
 }
 
+/* aboutMe-img adjustments */
 .aboutMe-img {
     margin-left: 3.5%;
     margin-right: 4%;
-    height: max-content;
 }
 
+/* img adjustments */
 img {
+    max-width: 100%;
+    height: 100%;
     border-radius: 8px;
 }
 
-.aboutMe > h2 {
-    margin-top: 0%;
-}
-
+/* aboutMe adjustments */
 .aboutMe {
     padding-right: 23%;
 }
 
+/* aboutMe h2 adjustments */
+.aboutMe > h2 {
+    margin-top: 0%;
+}
+
+/* hobby-list ul adjustments */
 .hobby-list > ul {
     padding: 0%;
     list-style: none;
     font-weight: bold;
 }
 
+
+/* projects container adjustment */
 #projects-container > h2 {
     text-align: center;
     margin-bottom: 4%;
 }
 
+/* flex-projects adjustment */
 .flex-projects {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* project adjustments */
 .project {
     background-color: var(--red-color);
     width: 350px;
@@ -163,17 +197,20 @@ img {
     border-radius: 16px;
 }
 
+/* contact-container adjustments */
 #contact-container {
     margin-top: 5%;
     text-align: center;
 
 }
 
+/* flex contact adjustments */
 .flex-contact {
     display: flex;
     justify-content: center;
 }
 
+/* contact button adjustments */
 .contact-btn {
     background-color: var(--red-color);
     margin-left: 2%;
@@ -181,6 +218,7 @@ img {
     border-radius: 5px;
 }
 
+/* myName adjustments */
 .myName {
     text-align: center;
     margin-top: 5%;
@@ -188,12 +226,14 @@ img {
     font-weight: bold;
 }
 
+/* copyright container adjustments */
 .copyright-container {
     background-color: var(--red-color);
     width: 100%;
     height: 100%;
 }
 
+/* copyright container p tags adjustments */
 .copyright-container > p {
     align-items: center;
     text-align: center;
