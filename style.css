@@ -213,6 +213,8 @@ img {
 /* contact button adjustments */
 .contact-btn {
     background-color: var(--red-color);
+    color: var(--white-color);
+    font-weight: bold;
     margin-left: 2%;
     padding: 0.4%;
     border-radius: 5px;
@@ -229,6 +231,7 @@ img {
 /* copyright container adjustments */
 .copyright-container {
     background-color: var(--red-color);
+    color: var(--white-color);
     width: 100%;
     height: 100%;
 }
@@ -237,6 +240,7 @@ img {
 .copyright-container > p {
     align-items: center;
     text-align: center;
+    font-weight: bold;
     margin: 0%;
     padding: 0.5%;
     
