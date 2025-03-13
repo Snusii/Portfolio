@@ -20,15 +20,13 @@ function toggle() {
 
 const headerText = document.querySelector("#header-text")
 
-function textDelay (duration) {
+function textTyper (duration) {
     return new Promise((resolve, duration) => {
         
 })
 
 async function textTyper (text, delay) {
-    const letters = text.split(" ");
-    for (let i = 0; i < letters.length; i++) {
-        console.log([i])
+    for (let i = 0; i < text.length; i++) {
         await textDelay(delay)
     }
 }
