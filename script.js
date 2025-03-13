@@ -12,78 +12,27 @@ const setLightMode = () => {
     lightMode = true;
 };
 
-
-
 function toggle() {
     lightMode ? setDarkMode() : setLightMode();
 
 }
 
-// textTyper (document.querySelector("#header-text"))
 
-async function textTyper (element) {
-    let text = element.textContent;
-    let headerText = "";
-    let delayInMilliseconds = 1000; //1 second
-    for (let i = 0; i < text.length; i++) {
-        setTimeout(function() {
-            headerText += text[i];
-            element.innerText = headerText;
-        }, delayInMilliseconds);
-          
+const headerText = document.querySelector("#header-text")
+
+function textDelay (duration) {
+    return new Promise((resolve, duration) => {
         
-        console.log();
+})
+
+async function textTyper (text, delay) {
+    const letters = text.split(" ");
+    for (let i = 0; i < letters.length; i++) {
+        console.log([i])
+        await textDelay(delay)
     }
 }
+}
 
+const delay = 1000;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* sette meg inn i denne?
-try {
-    
-} catch (error) {
-    
-}*/
