@@ -7,6 +7,7 @@
     --special-btn-color: #FFFFFF;
     --special-btn-textColor: #232323;
     --toggleSwitch-color: #FFFFFF;
+    --bar-color: #FFFFFF;
 }
 
 /* Lightmode colors */
@@ -16,6 +17,7 @@
     --special-btn-color: #232323;
     --special-btn-textColor: #FFFFFF;
     --toggleSwitch-color: #232323;
+    --bar-color: #232323;
 }
 
 /* html, and body adjustments, with a smooth scroll */
@@ -141,7 +143,7 @@ h1 {
 
 
 /* aboutMe container adjustments */
-.aboutMe-container {
+#aboutMe-container {
     display: flex;
     margin-bottom: 5%;
 }
@@ -161,7 +163,7 @@ img {
 
 /* aboutMe adjustments */
 .aboutMe {
-    padding-right: 23%;
+    padding-right: 45%;
 }
 
 /* aboutMe h2 adjustments */
@@ -170,10 +172,23 @@ img {
 }
 
 /* hobby-list ul adjustments */
-.hobby-list > ul {
+#hobby-container {
     padding: 0%;
-    list-style: none;
+}
+
+.hobby-list {
     font-weight: bold;
+}
+
+.bar-container {
+    background-color: var(--bar-color);
+    width: 70%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.red-bar {
+    
 }
 
 

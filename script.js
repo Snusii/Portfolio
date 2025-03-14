@@ -70,8 +70,17 @@ async function textTyper (element) {
 }
 
 
+///////////////
+// Hobby array
+//////////////
+/*
+function movehobbyBar(element) {
+for (let i = ; )
+}
+*/
+
 /////////////
-//Git Token
+// Git Token
 ////////////
 
 //
