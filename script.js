@@ -1,24 +1,37 @@
-const toggleSwitch = document.querySelector("#toggleSwitch");
+
+///////////////////////
+// Lighmode / Darkmode
+//////////////////////
+
+
+// Keep track if lightmode is on or off
 let lightMode = false;
 
-
+// arrow function setDarkMode
 const setDarkMode = () => {
+    // removes lightmode styleing on the DOM
     document.body.classList.remove("light-mode")
     lightMode = false;
 };
 
+// arrow function setLightMode
 const setLightMode = () => {
+    // add lightmode styleing on the DOM
     document.body.classList.add("light-mode")
     lightMode = true;
 };
 
+// toggle function 
 function toggle() {
+    // is lightMode on ? if false set setDarkMode function - if true set setLightMode function
     lightMode ? setDarkMode() : setLightMode();
 
 }
 
 
-
+///////////////////
+//Function for h1
+//////////////////
 
 // textTyper function call
 textTyper (document.querySelector("#header-text"))
@@ -46,13 +59,19 @@ async function textTyper (element) {
             // setting timeout 
             setTimeout(function() {
                 resolve(headerText);
-            },350);
+            },300);
         }); 
 
-        // awaiting timout then updates element
+        // awaiting timeout then updates element
         await myPromise.then((value) => {
             element.textContent = value;
         }); 
     }
 }
 
+
+/////////////
+//Git Token
+////////////
+
+//

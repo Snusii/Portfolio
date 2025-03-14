@@ -20,7 +20,7 @@
 
 /* html, and body adjustments, with a smooth scroll */
 html, body {
-    margin: 0%;
+    margin: 0;
     background-color: var(--base-color);
     color: var(--text-color);
     scroll-behavior: smooth;
