@@ -70,14 +70,61 @@ async function textTyper (element) {
 }
 
 
-///////////////
-// Hobby array
-//////////////
-/*
-function movehobbyBar(element) {
-for (let i = ; )
+///////////////////////
+// Hobby progress bar 
+//////////////////////
+
+// running the function autoMoveBar one time first
+// to prevent the elements inside to wait 10 sec before starting when DOM is connected
+autoMoveBar();
+
+// To make the bar load infinite after haveing a pause on 10 sec
+const autoMoveInterval = setInterval(autoMoveBar, 10000);
+
+// function autoMoveBar that contains the id of each element inside moveBar() = (CurrentProgress Bars)
+function autoMoveBar() {
+moveBar (document.querySelector("#bar-one"), 90);
+moveBar (document.querySelector("#bar-two"), 95);
+moveBar (document.querySelector("#bar-three"), 98);
+moveBar (document.querySelector("#bar-four"), 85);
+moveBar (document.querySelector("#bar-five"), 80);
 }
-*/
+
+// function movebar that takes in two parameters
+function moveBar(element, maxValue) {
+    // boolean
+    let loading = false;
+    // if loading is false 
+    if (!loading) {
+        // set loading to true
+        loading = true;
+        // variable set to value 0 so the bar starts loading from 0
+        let currentProgress = 0;
+        // variable progressInterval set to the value of method setInterval
+        // in the method is the loadingBar function with the value of setInterval method
+        // setInterval is set to load in 0,2 sec
+        const progressInterval = setInterval(loadingBar, 20);
+
+        // function loadingBar
+        function loadingBar() {
+            // if currentProgress is the same as maxValue
+            if (currentProgress === maxValue) {
+                // clearInterval in variable progressInterval
+                clearInterval(progressInterval);
+                // set loading to false
+                loading = false;
+            }
+            // else 
+            else {
+                // currentProgess keep running
+                currentProgress++;
+                // elements style width is the same ass currentProgress plus %
+                element.style.width = currentProgress + "%";
+            }
+        }
+    }
+}
+
 
 /////////////
 // Git Token

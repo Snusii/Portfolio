@@ -8,6 +8,7 @@
     --special-btn-textColor: #232323;
     --toggleSwitch-color: #FFFFFF;
     --bar-color: #FFFFFF;
+    --bar-color-red: #F33B3B;
 }
 
 /* Lightmode colors */
@@ -18,6 +19,7 @@
     --special-btn-textColor: #FFFFFF;
     --toggleSwitch-color: #232323;
     --bar-color: #232323;
+    --bar-color-red: #F33B3B;
 }
 
 /* html, and body adjustments, with a smooth scroll */
@@ -188,7 +190,11 @@ img {
 }
 
 .red-bar {
-    
+    background-color: var(--bar-color-red);
+    height: 20px;
+    width: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
