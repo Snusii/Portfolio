@@ -75,13 +75,17 @@ async function textTyper (element) {
 //////////////////////
 
 // running the function autoMoveBar one time first
-// to prevent the elements inside to wait 10 sec before starting when DOM is connected
+// to prevent the elements inside to be stuck at 0 for 10 sec before starting when DOM is loaded
 autoMoveBar();
 
-// To make the bar load infinite after haveing a pause on 10 sec
+// To make the bars load infinite after haveing a pause on 10 sec
 const autoMoveInterval = setInterval(autoMoveBar, 10000);
 
-// function autoMoveBar that contains the id of each element inside moveBar() = (CurrentProgress Bars)
+/////////////
+// Functions
+/////////////
+
+// function autoMoveBar that contains calls to moveBar function to start all progress bars
 function autoMoveBar() {
 moveBar (document.querySelector("#bar-one"), 90);
 moveBar (document.querySelector("#bar-two"), 95);
@@ -101,7 +105,7 @@ function moveBar(element, maxValue) {
         // variable set to value 0 so the bar starts loading from 0
         let currentProgress = 0;
         // variable progressInterval set to the value of method setInterval
-        // in the method is the loadingBar function with the value of setInterval method
+        // in the method is the loadingBar function with the value of Intervals
         // setInterval is set to load in 0,2 sec
         const progressInterval = setInterval(loadingBar, 20);
 
@@ -109,7 +113,7 @@ function moveBar(element, maxValue) {
         function loadingBar() {
             // if currentProgress is the same as maxValue
             if (currentProgress === maxValue) {
-                // clearInterval in variable progressInterval
+                // using clearInterval to clear Interval
                 clearInterval(progressInterval);
                 // set loading to false
                 loading = false;
@@ -118,7 +122,7 @@ function moveBar(element, maxValue) {
             else {
                 // currentProgess keep running
                 currentProgress++;
-                // elements style width is the same ass currentProgress plus %
+                // elements style width is set to currentProgress in %
                 element.style.width = currentProgress + "%";
             }
         }
