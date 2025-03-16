@@ -136,6 +136,7 @@ function moveBar(element, maxValue) {
     }
 }
 
+
 ///////////////////
 // ScrollUp button
 ///////////////////
