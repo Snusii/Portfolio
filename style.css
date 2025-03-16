@@ -74,17 +74,16 @@ a {
     fill: var(--toggleSwitch-color);
 }
 
-/*  */
+/* do not display sun on dark-mode */
 #toggleSwitch svg:last-child {
     display: none;
 }
 
-/*  */
 #toggleSwitch svg:first-child:hover {
     display: block;
     fill: var(--red-color);
 }
-
+/* lighmode - do not show moon on page*/
 .light-mode #toggleSwitch svg:first-child {
     display: none;
 }
@@ -182,6 +181,7 @@ img {
     font-weight: bold;
 }
 
+/* bar container adjustments*/
 .bar-container {
     background-color: var(--bar-color);
     width: 70%;
@@ -189,6 +189,7 @@ img {
     border-radius: 10px;
 }
 
+/* red bar adjustments*/
 .red-bar {
     background-color: var(--bar-color-red);
     height: 20px;
@@ -249,22 +250,37 @@ img {
     font-weight: bold;
 }
 
+/* scroll up adjustments */
 #scroll-up {
     display: flex;
     flex-direction: row-reverse;
-    border: none;
-    
 }
-
+/*scroll btn adjustments*/
 .scroll-btn {
-    display: fixed;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--special-btn-color);
+    border: none;
+    border-radius: 5px;
+    display: none; 
+}
+/* scroll btn on hover adjustments*/
+ .scroll-btn:hover {
+    background-color: var(--red-color);
+    fill: var(--white-color);
+} 
+
+/* Light-mode-btn adjustments*/
+.light-mode-btn {
+    fill: var(--special-btn-textColor);
 }
 
-.scroll-btn:hover {
-background-color: #F33B3B;
+/*dark-mode-btn adjustments*/
+.dark-mode-btn:hover {
+    fill: var(--white-color);
 }
-
-
 
 /* copyright container adjustments */
 .copyright-container {

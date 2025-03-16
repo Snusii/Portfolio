@@ -10,14 +10,21 @@ let lightMode = false;
 // arrow function setDarkMode
 const setDarkMode = () => {
     // removes lightmode styleing on the DOM
-    document.body.classList.remove("light-mode")
+    document.body.classList.remove("light-mode");
+    //add dark-mode-btn to the DOM when darkmode is on
+    //and remove light-mode-btn
+    document.querySelector("#scrollup-icon").classList.add("dark-mode-btn");
+    document.querySelector("#scrollup-icon").classList.remove("light-mode-btn");
     lightMode = false;
 };
 
 // arrow function setLightMode
 const setLightMode = () => {
+    
     // add lightmode styleing on the DOM
-    document.body.classList.add("light-mode")
+    document.body.classList.add("light-mode");
+    // add light-mode-btn when DOM is changed to lightmode 
+    document.querySelector("#scrollup-icon").classList.add("light-mode-btn");
     lightMode = true;
 };
 
@@ -133,9 +140,13 @@ function moveBar(element, maxValue) {
 // ScrollUp button
 ///////////////////
 
+// Getting the button 
 const scrollUp = document.querySelector(".scroll-btn");
+
+// Adding event listener to the window to determine when the button will show.
 window.addEventListener("scroll", function showButton() {
 
+    // if scrollY is bigger than 200, the button shows.
     if (window.scrollY > 200) {
         scrollUp.style.display = "block";
     }
@@ -145,18 +156,11 @@ window.addEventListener("scroll", function showButton() {
 
 });
 
-scrollUp.addEventListener("click", function scrollButtonUp(){
+// Adding event listener to the button, if clicked scroll smooth to the top.
+scrollUp.addEventListener("click", function scrollButtonUp() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
  
-
-
-
-/////////////
-// Git Token
-////////////
-
-//
