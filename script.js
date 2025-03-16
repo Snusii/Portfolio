@@ -129,6 +129,31 @@ function moveBar(element, maxValue) {
     }
 }
 
+///////////////////
+// ScrollUp button
+///////////////////
+
+const scrollUp = document.querySelector(".scroll-btn");
+window.addEventListener("scroll", function showButton() {
+
+    if (window.scrollY > 200) {
+        scrollUp.style.display = "block";
+    }
+    else {
+        scrollUp.style.display = "none";
+    }
+
+});
+
+scrollUp.addEventListener("click", function scrollButtonUp(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+ 
+
+
 
 /////////////
 // Git Token

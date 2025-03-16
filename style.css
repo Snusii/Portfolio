@@ -249,6 +249,23 @@ img {
     font-weight: bold;
 }
 
+#scroll-up {
+    display: flex;
+    flex-direction: row-reverse;
+    border: none;
+    
+}
+
+.scroll-btn {
+    display: fixed;
+}
+
+.scroll-btn:hover {
+background-color: #F33B3B;
+}
+
+
+
 /* copyright container adjustments */
 .copyright-container {
     background-color: var(--red-color);
